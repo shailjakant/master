@@ -1,0 +1,17 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+    hibernate: DEBUG
+
+  file: logs/mylogfile.log  
+  pattern:
+    console: '%d{yyyy-MMM-dd HH:mm:ss.SSS} - %msg%n'
+    file: '%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n'
+
+   
+spring:
+  output:
+    ansi:
+        enabled: DETECT
